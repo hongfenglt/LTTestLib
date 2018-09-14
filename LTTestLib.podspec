@@ -37,23 +37,17 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'View' do |ss|
-    # 源文件路径
     ss.source_files = 'Classes/View/*.{h,m}'
-    # 头文件路径
     ss.public_header_files = 'Classes/View/*.h'
   end
 
   s.subspec 'Model' do |ss|
-    # 源文件路径
     ss.source_files = 'Classes/Model/*.{h,m}'
-    # 头文件路径
     ss.public_header_files = 'Classes/Model/*.h'
   end
 
   s.subspec 'Service' do |ss|
-    # 源文件路径
     ss.source_files = 'Classes/Service/*.{h,m}'
-    # 头文件路径
     ss.public_header_files = 'Classes/Service/*.h'
   end
 

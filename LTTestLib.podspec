@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # 框架名字
   s.name         = "LTTestLib"
   # 版本号
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   # 简单描述
   s.summary      = "A Test Lib"
   # 框架描述：注意这里内容需要大于简单描述
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # 源码地址 这个Classes 就是我上面那个Classes目录
   # 如果你的项目中有图片获取其他资源也需要加进去 /.{png,bundle}
   # 这块如果不明白可以多看看其他项目的 .spec 怎么写的
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # 框架中中用到的framework
   s.framework  = "UIKit", "Foundation"
   # 框架中依赖中的其他 CocoaPods ，没有可以不写

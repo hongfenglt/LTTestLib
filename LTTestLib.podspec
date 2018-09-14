@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # 框架名字
   s.name         = "LTTestLib"
   # 版本号
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   # 简单描述
   s.summary      = "A Test Lib"
   # 框架描述：注意这里内容需要大于简单描述
@@ -23,34 +23,34 @@ Pod::Spec.new do |s|
   # 这块如果不明白可以多看看其他项目的 .spec 怎么写的
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # 框架中中用到的framework
-  # s.framework  = "UIKit", "Foundation"
+  s.framework  = "UIKit", "Foundation"
   # 框架中依赖中的其他 CocoaPods ，没有可以不写
-  # s.dependency "Reachability"
+  s.dependency "Reachability"
 
   # 如果你的项目很大，不区分文件夹会比较难找
   # 下面是设置子文件夹的方法
   # Controller 是文件夹名称
-  # s.subspec 'Controller' do |ss|
-  #   # 源文件路径
-  #   ss.source_files = 'Classes/Controller/*.{h,m}'
-  #   # 头文件路径
-  #   ss.public_header_files = 'Classes/Controller/*.h'
-  # end
+  s.subspec 'Controller' do |ss|
+    # 源文件路径
+    ss.source_files = 'Classes/Controller/*.{h,m}'
+    # 头文件路径
+    ss.public_header_files = 'Classes/Controller/*.h'
+  end
 
-  # s.subspec 'View' do |ss|
-  #   ss.source_files = 'Classes/View/*.{h,m}'
-  #   ss.public_header_files = 'Classes/View/*.h'
-  # end
+  s.subspec 'View' do |ss|
+    ss.source_files = 'Classes/View/*.{h,m}'
+    ss.public_header_files = 'Classes/View/*.h'
+  end
 
-  # s.subspec 'Model' do |ss|
-  #   ss.source_files = 'Classes/Model/*.{h,m}'
-  #   ss.public_header_files = 'Classes/Model/*.h'
-  # end
+  s.subspec 'Model' do |ss|
+    ss.source_files = 'Classes/Model/*.{h,m}'
+    ss.public_header_files = 'Classes/Model/*.h'
+  end
 
-  # s.subspec 'Service' do |ss|
-  #   ss.source_files = 'Classes/Service/*.{h,m}'
-  #   ss.public_header_files = 'Classes/Service/*.h'
-  # end
+  s.subspec 'Service' do |ss|
+    ss.source_files = 'Classes/Service/*.{h,m}'
+    ss.public_header_files = 'Classes/Service/*.h'
+  end
 
 
 end

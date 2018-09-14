@@ -1,16 +1,12 @@
 //
-// 	LTTestHelper.h 
+// 	LTService.m 
 //
 //  Created by redmaple (Telegram:@hongfenglt) on  2018/9/14 .
 //  Copyright © 2004-2018年 redmaple (https://github.com/hongfenglt)
 //
 
-#import <Foundation/Foundation.h>
+#import "LTService.h"
 
-@interface LTTestHelper : NSObject
-
-
-/** for LTTestLib*/
-- (void)lt_test;
+@implementation LTService
 
 @end
